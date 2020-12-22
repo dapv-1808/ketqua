@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('tgdd', 'App\Http\Controllers\ShowKetquaController@show');
+Route::get('xoso', 'App\Http\Controllers\XosoController@show');
+Route::get('xoso/get/{day}', 'App\Http\Controllers\XosoController@get');
+Route::get('xoso/update/{numberShow}', 'App\Http\Controllers\XosoController@update');
